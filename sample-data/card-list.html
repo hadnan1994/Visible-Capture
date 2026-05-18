@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visible Capture Sample Cards</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 32px;
+        color: #18202f;
+        font-family: system-ui, sans-serif;
+        background: #f7f8fb;
+      }
+
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .cards li {
+        padding: 16px;
+        border: 1px solid #dce2ec;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 4px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Fictional Project Cards</h1>
+      <p>This local sample contains generic repeated card data.</p>
+
+      <ul class="cards" role="list">
+        <li>
+          <h2>Atlas Review</h2>
+          <p>Owner: Morgan Lee</p>
+          <p>Stage: Planning</p>
+          <p>Priority: Medium</p>
+        </li>
+        <li>
+          <h2>Beacon Update</h2>
+          <p>Owner: Riley Chen</p>
+          <p>Stage: Drafting</p>
+          <p>Priority: Low</p>
+        </li>
+        <li>
+          <h2>Cedar Launch</h2>
+          <p>Owner: Avery Patel</p>
+          <p>Stage: Review</p>
+          <p>Priority: High</p>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

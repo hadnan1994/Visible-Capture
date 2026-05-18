@@ -1,0 +1,15 @@
+{
+  "name": "visible-capture",
+  "version": "0.1.0",
+  "description": "A local-first Chrome extension for capturing visible table and card data from the active tab.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node -e \"console.log('Lint placeholder: add ESLint or a similar tool when ready.')\""
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

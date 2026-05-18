@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Visible Page Data Capture",
+  "short_name": "Visible Capture",
+  "description": "Capture visible table and card data from the active tab and export it locally.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Visible Capture",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": []
+}

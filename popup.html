@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visible Capture</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup-shell" aria-labelledby="popup-title">
+      <header class="hero">
+        <div class="brand-mark" aria-hidden="true">VC</div>
+        <div>
+          <h1 id="popup-title">Visible Capture</h1>
+          <p>Capture visible page data into CSV.</p>
+        </div>
+      </header>
+
+      <section class="status-panel" aria-labelledby="status-title">
+        <div class="section-heading">
+          <h2 id="status-title">Status</h2>
+        </div>
+        <dl class="status-grid">
+          <div class="status-card wide">
+            <dt>Current page</dt>
+            <dd id="current-page-status">Ready</dd>
+          </div>
+          <div class="status-card">
+            <dt>Rows found on current page</dt>
+            <dd id="current-row-count">0</dd>
+          </div>
+          <div class="status-card">
+            <dt>Total saved rows</dt>
+            <dd id="total-row-count">0</dd>
+          </div>
+          <div class="status-card">
+            <dt>Duplicate skipped</dt>
+            <dd id="duplicate-count">0</dd>
+          </div>
+          <div class="status-card">
+            <dt>Last capture</dt>
+            <dd id="last-capture">Never</dd>
+          </div>
+        </dl>
+        <p id="message" class="message" role="status" aria-live="polite">Ready.</p>
+      </section>
+
+      <section class="actions" aria-label="Capture actions">
+        <button id="capture-button" type="button" class="primary">Capture Visible Data</button>
+        <button id="preview-button" type="button">Preview Saved Rows</button>
+        <button id="download-button" type="button">Download CSV</button>
+        <button id="copy-button" type="button">Copy CSV</button>
+        <button id="clear-button" type="button" class="quiet">Clear Saved Rows</button>
+      </section>
+
+      <section id="preview-panel" class="preview-panel" aria-label="Saved row preview" hidden>
+        <div class="preview-header">
+          <h2>Saved Rows</h2>
+          <span id="preview-count">0 rows</span>
+        </div>
+        <div id="preview-table-wrap" class="preview-table-wrap"></div>
+      </section>
+
+      <p class="compliance-note">
+        Only use this with data you are authorized to record or export. This tool only reads the active tab after you click capture.
+      </p>
+
+      <section class="help-panel" aria-labelledby="help-title">
+        <h2 id="help-title">How to use</h2>
+        <ol>
+          <li>Open a page with a visible table or list.</li>
+          <li>Click Capture Visible Data.</li>
+          <li>Review saved rows.</li>
+          <li>Manually move to another page if needed.</li>
+          <li>Capture again.</li>
+          <li>Download CSV.</li>
+        </ol>
+      </section>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
