@@ -159,6 +159,23 @@ npm run lint
 - Zip the extension folder.
 - Create GitHub release.
 
+## Chrome Web Store Upload Checklist
+
+- Run `npm test`.
+- Run `npm run package:extension`.
+- Confirm the ZIP is in `dist/`.
+- Confirm `manifest.json` is at the ZIP root.
+- Confirm the ZIP does not contain `.git`, `node_modules`, tests, sample data, or docs.
+- Open Chrome Web Store Developer Dashboard.
+- Create a new item or upload a new package.
+- Upload `dist/visible-capture-vX.Y.Z.zip`.
+- Fill listing details.
+- Add screenshots and promotional images separately in the dashboard.
+- Complete privacy practices.
+- Submit for review.
+
+The Chrome Web Store listing assets, screenshots, descriptions, and privacy disclosures are uploaded separately in the Developer Dashboard. They should not be bundled into the extension ZIP unless the extension uses them at runtime.
+
 ## Roadmap
 
 - Better card detection.

@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "test": "node --test",
-    "lint": "node -e \"console.log('Lint placeholder: add ESLint or a similar tool when ready.')\""
+    "lint": "node -e \"console.log('Lint placeholder: add ESLint or a similar tool when ready.')\"",
+    "package:extension": "node scripts/package-extension.mjs",
+    "release:check": "npm test && npm run package:extension"
   },
   "engines": {
     "node": ">=20"
